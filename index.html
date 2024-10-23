@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>PRODOC</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__contaier">
+        <a href="/" class="header__logo-link">
+          <img src="./img/logo.svg" alt="" class="header__logo-img" />
+        </a>
+        <div class="header__location-wrapper">
+          <img src="./img/location.svg" class="header__location-img" alt="" />
+          <p class="header__location-text">
+            Московская обл., Долгопрудный, Лихачёвский пр., 4
+          </p>
+        </div>
+        <div class="header__email-wrapper">
+          <img src="./img/email.svg" class="header__email-img" alt="" />
+          <p class="header__email-text">info@prodoc1.ru</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="nav-container">
+        <div class="nav-top">
+          <a href="/" class="nav__logo-link">
+            <img src="./img/logo.svg" alt="" class="nav__logo-img" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="nav__container">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >Главная <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav-bar-mob">
+            <div class="navbar-right">
+              <div class="navbar-right-wrapper">
+                <a href="tel:88000000000" class="navbar-right-text">
+                  <img src="./img/Phone.svg" class="navbar-right-img" alt="" />
+                  8 800 000 00 00
+                </a>
+              </div>
+              <a href="#" class="navbar-right-app">Оставить заявку</a>
+            </div>
+
+            <div class="nav__location-wrapper">
+              <img src="./img/location.svg" class="nav__location-img" alt="" />
+              <p class="nav__location-text">
+                Московская обл., Долгопрудный, Лихачёвский пр., 4
+              </p>
+            </div>
+            <div class="nav__email-wrapper">
+              <img src="./img/email.svg" class="nav__email-img" alt="" />
+              <p class="nav__email-text">info@prodoc1.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="video-background-holder">
+      <div class="video-background-overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="./img/vid.mp4" type="video/mp4" />
+      </video>
+      <div class="video-background-content container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white main">
+            <div class="main__top">
+              <h1 class="main__title">
+                Профессиональная исполнительная документация для строительства
+              </h1>
+              <p class="main__text-2">
+                Ваш надежный партнер в сфере строительной документации
+              </p>
+              <p class="main__text-3">
+                Мы предоставляем полный спектр услуг по подготовке
+                исполнительной документации, помогая строительным компаниям
+                ускорять процессы сдачи объектов и повышать эффективность
+                бизнеса.
+              </p>
+            </div>
+            <div class="main__bottom">
+              <p class="main__bottom-text">
+                Пройди опрос и получи 20% скидку на все услуги
+              </p>
+              <a href="https://prodoc1.ru" class="main__button button"
+                >Начать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-outer">
+      <div class="card-group">
+        <div class="card">
+          <h5 class="card-text">Более</h5>
+          <p class="card-title">5 лет</p>
+          <p class="card-text">На рынке</p>
+        </div>
+        <div class="card-line"></div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">29</h5>
+            <p class="card-text">Сотрудников</p>
+          </div>
+          <p class="card-text">В компании</p>
+        </div>
+        <div class="card-line"></div>
+        <div class="card">
+          <p class="card-text">Более</p>
+
+          <div class="card-body">
+            <h5 class="card-title">29</h5>
+            <p class="card-text">Сотрудников</p>
+          </div>
+          <p class="card-text">В компании</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-us" class="about element-animation">
+      <div class="about__container">
+        <div class="about__top">
+          <p class="about__title title">
+            О компании prodoc - мы первые в сфере консультации
+          </p>
+          <p class="about__description description">
+            Компания PRODOC – команда профессионалов с более чем 5-летним опытом
+            в сфере строительной документации. Мы успешно сотрудничаем с
+            ведущими компаниями и участвуем в масштабных проектах.
+          </p>
+        </div>
+        <div class="about__wrapper">
+          <img src="./img/about.png" alt="" class="about__img" />
+          <div class="about__text">
+            <div class="about__text-top">
+              <p class="about__wrapper-title">Наша миссия</p>
+              <p class="about__wrapper-description description">
+                Помочь строительным компаниям сосредоточиться на реализации
+                проектов, взяв на себя всю бумажную работу и обеспечив
+                соответствие документации всем нормативным требованиям.
+              </p>
+              <div class="about__bullits">
+                <div class="about__bullits-item">
+                  <img
+                    src="./img/Check.svg"
+                    alt=""
+                    class="about__bullits-img"
+                  />
+                  <p class="about__bullits-item-text">
+                    Успешный опыт в более чем 97 проектах
+                  </p>
+                </div>
+                <div class="about__bullits-item">
+                  <img
+                    src="./img/Check.svg"
+                    alt=""
+                    class="about__bullits-img"
+                  />
+                  <p class="about__bullits-item-text">
+                    Соблюдение сроков составления документации
+                  </p>
+                </div>
+                <div class="about__bullits-item">
+                  <img
+                    src="./img/Check.svg"
+                    alt=""
+                    class="about__bullits-img"
+                  />
+                  <p class="about__bullits-item-text">
+                    С каждым клиентом менеджер на связи 24/7
+                  </p>
+                </div>
+                <div class="about__bullits-item">
+                  <img
+                    src="./img/Check.svg"
+                    alt=""
+                    class="about__bullits-img"
+                  />
+                  <p class="about__bullits-item-text">
+                    От 2 часов делаются оперативные заказы
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#form1" class="about__button button"
+              >заказать колнсультацию</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form1" class="form-block element-animation">
+      <div class="form-block__container">
+        <p class="form-block__title title">
+          Получите расчёт стоимости исполнительной документации всего за 1 час!
+        </p>
+        <p class="form-block__prev">
+          Получите расчёт стоимости и зафиксируйте скидку 20% за Вашим номером
+          телефона
+        </p>
+        <form action="submit" class="form-block__form">
+          <div class="form-block__input-wrapper">
+            <input
+              type="text"
+              required
+              class="form-block__input"
+              placeholder="Как к вам обращаться?"
+            />
+            <input
+              type="tel"
+              required
+              class="form-block__input"
+              placeholder="+7 000 000 00 00"
+            />
+          </div>
+          <input
+            type="submit"
+            class="form-block__submit button"
+            value="Жду звонка"
+          />
+        </form>
+        <span class="form-block__disclaimer description"
+          >Нажимая на кнопку, Вы даёте согласие на <a
+            href=""
+            class="form-block__link"
+            >обработку своих персональных данных.</a
+          ></span
+        >
+      </div>
+    </div>
+
+    <div id="services" class="services element-animation">
+      <div class="services__container">
+        <div class="services__top">
+          <p class="services__title title">Наши услуги - комплексный подход</p>
+          <p class="services__description description">
+            Мы предлагаем комплексные решения в области подготовки
+            исполнительной документации, экономя ваше время и ресурсы.
+          </p>
+        </div>
+
+        <div class="services__wrapper">
+          <div class="services__item">
+            <img src="./img/service1.png" alt="" class="services__item-img" />
+            <div class="services__item-text">
+              <p class="services__item-title">
+                Подготовка исполнительной документации
+              </p>
+              <p class="services__item-description description">
+                Сосредоточьтесь на строительстве, а бумажную работу доверьте
+                нам! Мы профессионально составим акты выполненных работ,
+                гарантируя их соответствие всем нормативным требованиям.
+              </p>
+              <a href="" class="services__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="./img/service2.png" alt="" class="services__item-img" />
+            <div class="services__item-text">
+              <p class="services__item-title">Акты выполненных работ</p>
+              <p class="services__item-description description">
+                Сосредоточьтесь на строительстве, а бумажную работу доверьте
+                нам! Мы профессионально составим акты выполненных работ,
+                гарантируя их соответствие всем нормативным требованиям.
+              </p>
+              <a href="" class="services__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="./img/service3.png" alt="" class="services__item-img" />
+            <div class="services__item-text">
+              <p class="services__item-title">Разработка ППР</p>
+              <p class="services__item-description description">
+                Сосредоточьтесь на строительстве, а бумажную работу доверьте
+                нам! Мы профессионально составим акты выполненных работ,
+                гарантируя их соответствие всем нормативным требованиям.
+              </p>
+              <a href="" class="services__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="./img/service4.png" alt="" class="services__item-img" />
+            <div class="services__item-text">
+              <p class="services__item-title">
+                Заполнение общих и специальных журналов
+              </p>
+              <p class="services__item-description description">
+                Сосредоточьтесь на строительстве, а бумажную работу доверьте
+                нам! Мы профессионально составим акты выполненных работ,
+                гарантируя их соответствие всем нормативным требованиям.
+              </p>
+              <a href="" class="services__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="./img/service5.png" alt="" class="services__item-img" />
+            <div class="services__item-text">
+              <p class="services__item-title">Сбор и оформление документации</p>
+              <p class="services__item-description description">
+                Сосредоточьтесь на строительстве, а бумажную работу доверьте
+                нам! Мы профессионально составим акты выполненных работ,
+                гарантируя их соответствие всем нормативным требованиям.
+              </p>
+              <a href="" class="services__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="./img/service6.png" alt="" class="services__item-img" />
+            <div class="services__item-text">
+              <p class="services__item-title">
+                Введение документации до полного подписания CК и ТН
+              </p>
+              <p class="services__item-description description">
+                Сосредоточьтесь на строительстве, а бумажную работу доверьте
+                нам! Мы профессионально составим акты выполненных работ,
+                гарантируя их соответствие всем нормативным требованиям.
+              </p>
+              <a href="" class="services__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work element-animation">
+      <div class="work__container">
+        <div class="work__top">
+          <p class="work__title title">Как мы работаем?</p>
+          <p class="work__description description">
+            Мы стремимся сделать процесс сотрудничества с нами максимально
+            простым и эффективным для наших клиентов. Наш подход основан на
+            прозрачности, профессионализме и внимании к деталям.
+          </p>
+        </div>
+        <div class="work__wrapper">
+          <div class="work__item">
+            <p class="work__item-text element-animation description">
+              Вы оставляете заявку на сайте, по телефону или по электронной
+              почте. Наш менеджер связывается с вами в течение 30 минут для
+              уточнения деталей.
+            </p>
+            <div class="work__item-num element-animation">1</div>
+            <a href="#form2" class="work__item-button element-animation button"
+              >заказать колнсультацию</a
+            >
+          </div>
+          <div class="work__item">
+            <a
+              href="https://prodoc1.ru/"
+              class="work__item-button element-animation button"
+              >Заполнить бриф</a
+            >
+            <div class="work__item-num element-animation">2</div>
+            <p class="work__item-text element-animation description">
+              Изучаем ваши потребности и собираем необходимую информацию о
+              проекте. Проводим бесплатный аудит текущей документации (при
+              необходимости).
+            </p>
+          </div>
+          <div class="work__item">
+            <p class="work__item-text element-animation description">
+              Готовим коммерческое предложение с подробным описанием услуг,
+              сроков и стоимости. Согласовываем условия и заключаем договор
+            </p>
+            <div class="work__item-num element-animation">3</div>
+            <p class="work__item-subtitle element-animation">
+              Предложение и согласование
+            </p>
+          </div>
+          <div class="work__item">
+            <p class="work__item-subtitle element-animation">
+              Выполнение работ
+            </p>
+            <div class="work__item-num element-animation">4</div>
+            <p class="work__item-text element-animation description">
+              Наша команда специалистов приступает к выполнению поставленных
+              задач. Регулярно информируем вас о ходе работ и предоставляем
+              промежуточные отчёты.
+            </p>
+          </div>
+          <div class="work__item">
+            <p class="work__item-text element-animation description">
+              Готовим полный комплект документации, соответствующий всем
+              требованиям . Передаём документы в удобном для вас формате
+              (электронном и/или печатном).
+            </p>
+            <div class="work__item-num element-animation">5</div>
+            <p class="work__item-subtitle element-animation">
+              Передача результатов
+            </p>
+          </div>
+          <div class="work__item">
+            <p class="work__item-subtitle element-animation">
+              Поддержка после завершения
+            </p>
+            <div class="work__item-num element-animation">6</div>
+
+            <p class="work__item-text element-animation description">
+              Предоставляем поддержку и консультации после завершения проекта.
+              Вносим правки и корректировки при необходимости (они включены в
+              стоимость).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form2" class="form-block element-animation">
+      <div class="form-block__container">
+        <p class="form-block__title title">
+          Получите расчёт стоимости исполнительной документации всего за 1 час!
+        </p>
+        <p class="form-block__prev">
+          Получите расчёт стоимости и зафиксируйте скидку 20% за Вашим номером
+          телефона
+        </p>
+        <form action="submit" class="form-block__form">
+          <div class="form-block__input-wrapper">
+            <input
+              type="text"
+              required
+              class="form-block__input"
+              placeholder="Как к вам обращаться?"
+            />
+            <input
+              type="tel"
+              required
+              class="form-block__input"
+              placeholder="+7 000 000 00 00"
+            />
+          </div>
+          <input
+            type="submit"
+            class="form-block__submit button"
+            value="начать сотрудничество"
+          />
+        </form>
+        <span class="form-block__disclaimer description"
+          >Нажимая на кнопку, Вы даёте согласие на <a
+            href=""
+            class="form-block__link"
+            >обработку своих персональных данных.</a
+          ></span
+        >
+      </div>
+    </div>
+
+    <div class="garanties element-animation">
+      <div class="garanties__container">
+        <div class="garanties__item">
+          <img src="./img/garant1.svg" class="garant__img" alt="" />
+          <p class="garanties__description description">
+            Гарантируем соответствие документации всем нормативным требованиям и
+            стандартам.
+          </p>
+        </div>
+        <div class="garanties__item">
+          <img src="./img/garant2.svg" class="garant__img" alt="" />
+          <p class="garanties__description description">
+            Чётко придерживаемся согласованных сроков выполнения работ.
+          </p>
+        </div>
+        <div class="garanties__item">
+          <img src="./img/garant3.svg" class="garant__img" alt="" />
+          <p class="garanties__description description">
+            Учитываем все особенности вашего проекта и предоставляем
+            персональные решения.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="proud element-animation">
+      <div class="proud__container">
+        <div class="proud__top">
+          <p class="proud__title title">Наша гордость</p>
+          <p class="proud__description description">
+            Мы гордимся участием в крупных проектах и успешным сотрудничеством с
+            ведущими компаниями.
+          </p>
+        </div>
+
+        <div class="proud__wrapper">
+          <div class="proud__item">
+            <img src="./img/proud1.png" alt="" class="proud__item-img" />
+            <div class="proud__item-text">
+              <div class="proud__item-text-top">
+                <p class="proud__item-description description">
+                  Мы гордимся нашим сотрудничеством с компанией «Роснефть»,
+                  одним из крупнейших представителей нефтегазовой отрасли. В
+                  рамках этого партнёрства мы выполнили комплекс работ по
+                  подготовке исполнительной документации для важных
+                  инфраструктурных проектов.
+                </p>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample1"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Разработка исполнительной документации по разделам АС,
+                        ТК, ТХ.
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample1"
+                    >
+                      <div class="accordion-body">
+                        Оформили документацию по технологическим конструкциям,
+                        обеспечив точное соответствие установленным нормам и
+                        стандартам. Создали подробные описания технологических
+                        процессов и оборудования, используемого на объекте.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Разработка ППР, ППРк, ПОС
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample1"
+                    >
+                      <div class="accordion-body">
+                        Создали подробные описания технологических процессов и
+                        оборудования, используемого на объекте.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Сдача объекта
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample1"
+                    >
+                      <div class="accordion-body">
+                        Проект был завершён в установленные сроки с высоким
+                        уровнем качества. «Роснефть» отметила наш
+                        профессионализм и ответственность, что укрепило наши
+                        партнёрские отношения и доверие со стороны заказчика.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="proud__item-description description"></p>
+            </div>
+          </div>
+
+          <div class="proud__item">
+            <div class="proud__item-text">
+              <div class="proud__item-text-top">
+                <p class="proud__item-description description">
+                  Сотрудничество с компанией «Газпром» стало для нас важным
+                  этапом развития и подтверждением нашей компетентности в сфере
+                  подготовки исполнительной документации для крупных проектов.
+                </p>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample2"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        Разработка исполнительной документации по разделам АС,
+                        ТК, ТХ
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample2"
+                    >
+                      <div class="accordion-body">
+                        Сотрудничество с компанией «Газпром» стало для нас
+                        важным этапом развития и подтверждением нашей
+                        компетентности в сфере подготовки исполнительной
+                        документации для крупных проектов.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive"
+                      >
+                        Разработка ППР, ППРк, ПОС
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFive"
+                      data-bs-parent="#accordionFlushExample2"
+                    >
+                      <div class="accordion-body">
+                        Сотрудничество с компанией «Газпром» стало для нас
+                        важным этапом развития и подтверждением нашей
+                        компетентности в сфере подготовки исполнительной
+                        документации для крупных проектов.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        Сдача объекта
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSix"
+                      data-bs-parent="#accordionFlushExample2"
+                    >
+                      <div class="accordion-body">
+                        Сотрудничество с компанией «Газпром» стало для нас
+                        важным этапом развития и подтверждением нашей
+                        компетентности в сфере подготовки исполнительной
+                        документации для крупных проектов.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="proud__item-description description">
+                Проект был успешно реализован и сдан в эксплуатацию вовремя.
+                «Газпром» высоко оценил наше качество работы и оперативность,
+                что позволило укрепить наше сотрудничество и зарекомендовать
+                себя как надёжного партнёра.
+              </p>
+            </div>
+            <img src="./img/proud2.png" alt="" class="proud__item-img" />
+          </div>
+
+          <div class="proud__item">
+            <img src="./img/proud3.png" alt="" class="proud__item-img" />
+            <div class="proud__item-text">
+              <div class="proud__item-text-top">
+                <p class="proud__item-description description">
+                  Участие в строительстве «СКА Арена» стало для нас знаковым
+                  проектом, позволяющим продемонстрировать наши возможности в
+                  сфере спортивных и общественных сооружений.
+                </p>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample3"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSeven"
+                      >
+                        Разработка исполнительной документации по разделам АР,
+                        АИ, АС
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSeven"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSeven"
+                      data-bs-parent="#accordionFlushExample3"
+                    >
+                      <div class="accordion-body">
+                        Участие в строительстве «СКА Арена» стало для нас
+                        знаковым проектом, позволяющим продемонстрировать наши
+                        возможности в сфере спортивных и общественных
+                        сооружений..
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button
+                        class="accordion-button proud-accordion collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseNine"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseNine"
+                      >
+                        Сдача объекта
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseNine"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingNine"
+                      data-bs-parent="#accordionFlushExample3"
+                    >
+                      <div class="accordion-body">
+                        Участие в строительстве «СКА Арена» стало для нас
+                        знаковым проектом, позволяющим продемонстрировать наши
+                        возможности в сфере спортивных и общественных
+                        сооружений..
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="proud__item-description description">
+                <b>«СКА Арена» </b> была введена в эксплуатацию в
+                запланированные сроки. Наша работа по подготовке исполнительной
+                документации способствовала оперативной сдаче объекта и получила
+                положительные отзывы от заказчика. Это укрепило нашу репутацию
+                как профессионалов в области подготовки документации для сложных
+                и масштабных проектов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews element-animation">
+      <div class="reviews__container">
+        <div class="reviews__block"></div>
+        <div class="reviews__main">
+          <div class="reviews__text">
+            <p class="reviews__comment">
+              Сотрудничество с компанией «ПроДок» оказалось одним из лучших
+              решений для нашего проекта. Они взяли на себя всю подготовку
+              исполнительной документации, что значительно сократило наши
+              внутренние затраты и ускорило процесс сдачи объекта. Команда
+              «ПроДок» проявила высокий уровень профессионализма, оперативности
+              и внимательности к деталям. Все документы были оформлены
+              безупречно и соответствовали всем нормативным требованиям.
+              Рекомендуем «ПроДок» как надежного и ответственного партнера
+            </p>
+            <div class="reviews__from">
+              <p class="reviews__company">Главный инженер “Газпром”</p>
+              <p class="reviews__name">Алексей Рожков</p>
+            </div>
+          </div>
+          <img src="./img/review-logo.png" alt="" class="reviews__logo" />
+        </div>
+        <div class="reviews__block"></div>
+      </div>
+    </div>
+
+    <div class="faq element-animation">
+      <div class="faq__container">
+        <div class="faq__top">
+          <p class="faq__title title">Часто задаваемые вопросы</p>
+          <p class="faq__description description">
+            Ответы на самые популярные вопросы.
+          </p>
+        </div>
+        <div class="mb-8">
+          <div class="">
+            <div class="row justify-content-center">
+              <div class="col-11 col-xl-10"></div>
+              <div class="col-11 col-xl-10">
+                <div class="accordion accordion-flush" id="faqAccount">
+                  <div class="accordion-item bg-transparent border-bottom py-3">
+                    <h2 class="accordion-header" id="faqAccountHeading1">
+                      <button
+                        class="accordion-button faq-accordion plus-menus collapsed bg-transparent fw-bold shadow-none link-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse1"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse1"
+                      >
+                        What is an account?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse1"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading1"
+                    >
+                      <div class="accordion-body">
+                        <p class="description">
+                          An account is a personal or organizational record that
+                          allows you to access and manage various services,
+                          often requiring authentication through a username and
+                          password.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-3">
+                    <h2 class="accordion-header" id="faqAccountHeading2">
+                      <button
+                        class="accordion-button faq-accordion plus-menus collapsed bg-transparent fw-bold shadow-none link-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse2"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse2"
+                      >
+                        How do I create an account?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading2"
+                    >
+                      <div class="accordion-body">
+                        <p class="description">
+                          To create an account, visit the website or application
+                          and look for a "Sign Up" or "Create Account" button.
+                          Follow the instructions to enter your information and
+                          create a username and password.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-3">
+                    <h2 class="accordion-header" id="faqAccountHeading3">
+                      <button
+                        class="accordion-button faq-accordion plus-menus collapsed bg-transparent fw-bold shadow-none link-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse3"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse3"
+                      >
+                        How do I secure my account?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading3"
+                    >
+                      <div class="accordion-body">
+                        <p class="description">
+                          To secure your account, use a robust and unique
+                          password, enable two-factor authentication if
+                          available, and be cautious about sharing your login
+                          information. Regularly update your password and avoid
+                          using easily guessable information like birthdays or
+                          names.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-3">
+                    <h2 class="accordion-header" id="faqAccountHeading4">
+                      <button
+                        class="accordion-button faq-accordion plus-menus collapsed bg-transparent fw-bold shadow-none link-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse4"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse4"
+                      >
+                        What should I do if I forget my password?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse4"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading4"
+                    >
+                      <div class="accordion-body">
+                        <p class="description">
+                          If you forget your password, most websites and
+                          services offer a "Forgot Password" or "Reset Password"
+                          option. Follow the steps to reset your password, often
+                          involving an email or SMS verification.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-3">
+                    <h2 class="accordion-header" id="faqAccountHeading5">
+                      <button
+                        class="accordion-button faq-accordion plus-menus collapsed bg-transparent fw-bold shadow-none link-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse5"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse5"
+                      >
+                        What should I do if my account is compromised or hacked?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse5"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading5"
+                    >
+                      <div class="accordion-body">
+                        <p class="description">
+                          If you suspect your account has been compromised,
+                          change your password immediately. Contact the service
+                          provider for further assistance, and consider enabling
+                          two-factor authentication for added security.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="news" class="news element-animation">
+      <div class="news__container">
+        <div class="news__wrapper">
+          <div class="news__item">
+            <img src="./img/news1.png" alt="" class="news__item-img" />
+            <div class="news__item-text">
+              <p class="news__item-title">Название новости №1</p>
+
+              <a href="" class="news__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./img/news1.png" alt="" class="news__item-img" />
+            <div class="news__item-text">
+              <p class="news__item-title">Название новости №2</p>
+
+              <a href="" class="news__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./img/news1.png" alt="" class="news__item-img" />
+            <div class="news__item-text">
+              <p class="news__item-title">Название новости №3</p>
+
+              <a href="" class="news__item-link">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="contacts" class="footer element-animation">
+      <div class="footer__container">
+        <div class="footer__column">
+          <p class="footer__title">КОНТАКТЫ</p>
+          <div class="footer__contact">
+            <p class="footer__contact-prev">Почта:</p>
+            <a href="mailto:info@prodoc1.ru" class="footer__contact-text"
+              >Info@prodoc1.ru</a
+            >
+          </div>
+          <div class="footer__contact">
+            <p class="footer__contact-prev">Телефон:</p>
+            <a href="tel:88000000000" class="footer__contact-text"
+              >8 800 000 00 00</a
+            >
+          </div>
+          <a href="/" class="footer__logo-link">
+            <img src="./img/logo.svg" alt="" class="footer__logo-img" />
+          </a>
+        </div>
+        <div class="footer__column footer__links-wrapper">
+          <a href="" class="footer__wrapper-link">Главная </a
+          ><a href="" class="footer__wrapper-link">О нас </a
+          ><a href="" class="footer__wrapper-link">наши работы</a
+          ><a href="" class="footer__wrapper-link">услуги</a
+          ><a href="" class="footer__wrapper-link">новости</a
+          ><a href="" class="footer__wrapper-link">контакты</a>
+        </div>
+
+        <div class="footer__column">
+          <form action="submit" class="footer__form">
+            <div class="footer__input-wrapper">
+              <input
+                type="text"
+                required
+                class="footer__input"
+                placeholder="Как вас зовут?"
+              />
+              <input
+                type="tel"
+                required
+                class="footer__input"
+                placeholder="+7 000 000 00 00"
+              />
+              <input
+                type="email"
+                required
+                class="footer__input"
+                placeholder="Email"
+              />
+            </div>
+            <input
+              type="submit"
+              class="footer__submit button"
+              value="Заказать звонок"
+            />
+
+            <span class="footer__disclaimer description"
+              >Нажимая на кнопку, Вы даёте согласие на <a
+                href=""
+                class="footer__link"
+                >обработку своих персональных данных.</a
+              ></span
+            >
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-container">
+          <a href="" class="footer__bottom-link">Политика конфиденциальности</a>
+          <a href="" class="footer__bottom-link">ПУБЛИЧНАЯ ОФЕРТА</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
