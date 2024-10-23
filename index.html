@@ -15,9 +15,24 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
 
     <title>PRODOC</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "rLgQ3Ae2anwIKnqVj",
+      });
+   })();
+</script>
   </head>
   <body>
     <header class="header">
@@ -142,6 +157,7 @@
         </div>
       </div>
     </div>
+
     <div class="card-outer">
       <div class="card-group">
         <div class="card">
@@ -256,12 +272,14 @@
         <form action="submit" class="form-block__form">
           <div class="form-block__input-wrapper">
             <input
+            name="user_name"
               type="text"
               required
               class="form-block__input"
               placeholder="Как к вам обращаться?"
             />
             <input
+            name="user_tel"
               type="tel"
               required
               class="form-block__input"
@@ -270,6 +288,7 @@
           </div>
           <input
             type="submit"
+            name="user_email"
             class="form-block__submit button"
             value="Жду звонка"
           />
@@ -473,12 +492,13 @@
           <div class="form-block__input-wrapper">
             <input
               type="text"
+              name="user_name"
               required
               class="form-block__input"
               placeholder="Как к вам обращаться?"
             />
             <input
-              type="tel"
+              type="tel" name="user_tel"
               required
               class="form-block__input"
               placeholder="+7 000 000 00 00"
@@ -832,27 +852,136 @@
 
     <div class="reviews element-animation">
       <div class="reviews__container">
-        <div class="reviews__block"></div>
-        <div class="reviews__main">
-          <div class="reviews__text">
-            <p class="reviews__comment">
-              Сотрудничество с компанией «ПроДок» оказалось одним из лучших
-              решений для нашего проекта. Они взяли на себя всю подготовку
-              исполнительной документации, что значительно сократило наши
-              внутренние затраты и ускорило процесс сдачи объекта. Команда
-              «ПроДок» проявила высокий уровень профессионализма, оперативности
-              и внимательности к деталям. Все документы были оформлены
-              безупречно и соответствовали всем нормативным требованиям.
-              Рекомендуем «ПроДок» как надежного и ответственного партнера
-            </p>
-            <div class="reviews__from">
-              <p class="reviews__company">Главный инженер “Газпром”</p>
-              <p class="reviews__name">Алексей Рожков</p>
+        <swiper-container
+          slides-per-view="auto"
+          centered-slides="true"
+          space-between="30"
+          class="mySwiper"
+          loop="true"
+        >
+          <swiper-slide>
+            <div class="reviews__main">
+              <div class="reviews__text">
+                <p class="reviews__comment">
+                  Сотрудничество с компанией «ПроДок» оказалось одним из лучших
+                  решений для нашего проекта. Они взяли на себя всю подготовку
+                  исполнительной документации, что значительно сократило наши
+                  внутренние затраты и ускорило процесс сдачи объекта. Команда
+                  «ПроДок» проявила высокий уровень профессионализма,
+                  оперативности и внимательности к деталям. Все документы были
+                  оформлены безупречно и соответствовали всем нормативным
+                  требованиям. Рекомендуем «ПроДок» как надежного и
+                  ответственного партнера
+                </p>
+                <div class="reviews__from">
+                  <p class="reviews__company">Главный инженер “Газпром”</p>
+                  <p class="reviews__name">Алексей Рожков</p>
+                </div>
+              </div>
+              <img src="./img/review-logo.png" alt="" class="reviews__logo" />
             </div>
-          </div>
-          <img src="./img/review-logo.png" alt="" class="reviews__logo" />
-        </div>
-        <div class="reviews__block"></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="reviews__main">
+              <div class="reviews__text">
+                <p class="reviews__comment">
+                  Сотрудничество с компанией «ПроДок» оказалось одним из лучших
+                  решений для нашего проекта. Они взяли на себя всю подготовку
+                  исполнительной документации, что значительно сократило наши
+                  внутренние затраты и ускорило процесс сдачи объекта. Команда
+                  «ПроДок» проявила высокий уровень профессионализма,
+                  оперативности и внимательности к деталям. Все документы были
+                  оформлены безупречно и соответствовали всем нормативным
+                  требованиям. Рекомендуем «ПроДок» как надежного и
+                  ответственного партнера
+                </p>
+                <div class="reviews__from">
+                  <p class="reviews__company">Главный инженер “Газпром”</p>
+                  <p class="reviews__name">Алексей Рожков</p>
+                </div>
+              </div>
+              <img
+                src="./img/review-logo.png"
+                alt=""
+                class="reviews__logo"
+              /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div class="reviews__main">
+              <div class="reviews__text">
+                <p class="reviews__comment">
+                  Сотрудничество с компанией «ПроДок» оказалось одним из лучших
+                  решений для нашего проекта. Они взяли на себя всю подготовку
+                  исполнительной документации, что значительно сократило наши
+                  внутренние затраты и ускорило процесс сдачи объекта. Команда
+                  «ПроДок» проявила высокий уровень профессионализма,
+                  оперативности и внимательности к деталям. Все документы были
+                  оформлены безупречно и соответствовали всем нормативным
+                  требованиям. Рекомендуем «ПроДок» как надежного и
+                  ответственного партнера
+                </p>
+                <div class="reviews__from">
+                  <p class="reviews__company">Главный инженер “Газпром”</p>
+                  <p class="reviews__name">Алексей Рожков</p>
+                </div>
+              </div>
+              <img
+                src="./img/review-logo.png"
+                alt=""
+                class="reviews__logo"
+              /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div class="reviews__main">
+              <div class="reviews__text">
+                <p class="reviews__comment">
+                  Сотрудничество с компанией «ПроДок» оказалось одним из лучших
+                  решений для нашего проекта. Они взяли на себя всю подготовку
+                  исполнительной документации, что значительно сократило наши
+                  внутренние затраты и ускорило процесс сдачи объекта. Команда
+                  «ПроДок» проявила высокий уровень профессионализма,
+                  оперативности и внимательности к деталям. Все документы были
+                  оформлены безупречно и соответствовали всем нормативным
+                  требованиям. Рекомендуем «ПроДок» как надежного и
+                  ответственного партнера
+                </p>
+                <div class="reviews__from">
+                  <p class="reviews__company">Главный инженер “Газпром”</p>
+                  <p class="reviews__name">Алексей Рожков</p>
+                </div>
+              </div>
+              <img
+                src="./img/review-logo.png"
+                alt=""
+                class="reviews__logo"
+              /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div class="reviews__main">
+              <div class="reviews__text">
+                <p class="reviews__comment">
+                  Сотрудничество с компанией «ПроДок» оказалось одним из лучших
+                  решений для нашего проекта. Они взяли на себя всю подготовку
+                  исполнительной документации, что значительно сократило наши
+                  внутренние затраты и ускорило процесс сдачи объекта. Команда
+                  «ПроДок» проявила высокий уровень профессионализма,
+                  оперативности и внимательности к деталям. Все документы были
+                  оформлены безупречно и соответствовали всем нормативным
+                  требованиям. Рекомендуем «ПроДок» как надежного и
+                  ответственного партнера
+                </p>
+                <div class="reviews__from">
+                  <p class="reviews__company">Главный инженер “Газпром”</p>
+                  <p class="reviews__name">Алексей Рожков</p>
+                </div>
+              </div>
+              <img
+                src="./img/review-logo.png"
+                alt=""
+                class="reviews__logo"
+              /></div
+          ></swiper-slide>
+        </swiper-container>
       </div>
     </div>
 
@@ -1084,20 +1213,21 @@
           <form action="submit" class="footer__form">
             <div class="footer__input-wrapper">
               <input
+              name="user_name"
                 type="text"
                 required
                 class="footer__input"
                 placeholder="Как вас зовут?"
               />
               <input
-                type="tel"
+                type="tel" name="user_tel"
                 required
                 class="footer__input"
                 placeholder="+7 000 000 00 00"
               />
               <input
                 type="email"
-                required
+                required name="user_email"
                 class="footer__input"
                 placeholder="Email"
               />
@@ -1126,6 +1256,15 @@
       </div>
     </footer>
 
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      import swiper from "https://cdn.jsdelivr.net/npm/swiper@11.1.14/+esm";
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
