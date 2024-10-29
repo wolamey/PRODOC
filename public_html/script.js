@@ -73,54 +73,41 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
+
   emailjs.init("rLgQ3Ae2anwIKnqVj");
 
-  const popup = document.getElementById('thankYouPopup');
-  const closeBtn = document.querySelector('.close-btn');
-
-  closeBtn.onclick = function() {
-    popup.style.display = 'none';
-  }
-
-  window.onclick = function(event) {
-    if (event.target === popup) {
-      popup.style.display = 'none';
-    }
-  }
 
   const forms = document.querySelectorAll('form');
 
   forms.forEach((form) => {
     form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      console.log('Форма отправлена'); // Добавлено для отладки
+      event.preventDefault(); 
 
+    
       const formData = new FormData(form);
       const formObject = {};
       formData.forEach((value, key) => {
         formObject[key] = value;
       });
 
+
+  
       emailjs
         .send('service_wqldakw', 'template_k4sz5bs', formObject)
         .then(
           function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            popup.style.display = 'flex'; 
+            alert('Ваша заявка успешно отправлена!');
             form.reset();
-            
-            // Добавляем таймер, чтобы попап исчезал через 4 секунды
-            setTimeout(() => {
-              popup.style.display = 'none';
-            }, 4000);
           },
           function (error) {
             console.log('FAILED...', error);
             alert('Произошла ошибка при отправке заявки.');
           }
         );
-        ym(98763126,'reachGoal','spasibo');
     });
   });
 });
