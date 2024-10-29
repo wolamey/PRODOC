@@ -79,15 +79,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const popup = document.getElementById('thankYouPopup');
   const closeBtn = document.querySelector('.close-btn');
 
-<<<<<<< HEAD
   closeBtn.onclick = function() {
     popup.style.display = 'none';
   }
-=======
-document.addEventListener('DOMContentLoaded', function () {
-
-  emailjs.init("rLgQ3Ae2anwIKnqVj");
->>>>>>> 9c2817dbb874d03c4652c591075d23ca6628ca20
 
   window.onclick = function(event) {
     if (event.target === popup) {
@@ -99,53 +93,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
   forms.forEach((form) => {
     form.addEventListener('submit', function (event) {
-<<<<<<< HEAD
       event.preventDefault();
-      console.log('Форма отправлена'); // Добавлено для отладки
+      console.log('Форма отправлена'); 
 
-=======
-      event.preventDefault(); 
-
-    
->>>>>>> 9c2817dbb874d03c4652c591075d23ca6628ca20
       const formData = new FormData(form);
       const formObject = {};
       formData.forEach((value, key) => {
         formObject[key] = value;
       });
 
-<<<<<<< HEAD
-=======
-
-  
->>>>>>> 9c2817dbb874d03c4652c591075d23ca6628ca20
       emailjs
         .send('service_wqldakw', 'template_k4sz5bs', formObject)
         .then(
           function (response) {
             console.log('SUCCESS!', response.status, response.text);
-<<<<<<< HEAD
             popup.style.display = 'flex'; 
             form.reset();
             
-            // Добавляем таймер, чтобы попап исчезал через 4 секунды
             setTimeout(() => {
               popup.style.display = 'none';
             }, 4000);
-=======
-            alert('Ваша заявка успешно отправлена!');
-            form.reset();
->>>>>>> 9c2817dbb874d03c4652c591075d23ca6628ca20
           },
           function (error) {
             console.log('FAILED...', error);
             alert('Произошла ошибка при отправке заявки.');
           }
         );
-<<<<<<< HEAD
         ym(98763126,'reachGoal','spasibo');
-=======
->>>>>>> 9c2817dbb874d03c4652c591075d23ca6628ca20
     });
   });
 });
